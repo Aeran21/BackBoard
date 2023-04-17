@@ -1,0 +1,23 @@
+<body>
+    <h1><a href="/">애라니네 BOARD</a></h1>
+    <h2>게시글 목록</h2>
+    <table>
+        <tr>
+            <td>No</td>
+            <td>Title</td>
+            <td>Name</td>
+            <td>Date</td>
+        </tr>
+        {% for item in content %}
+        <tr>
+            <td>{{item.num}}</td>
+            <td>{{item.title}}</td>
+            <td>{{item.username}}</td>
+            <td>{{item.date}}</td>
+            &nbsp;&nbsp;<td><a href="/board/view">자세히 보기</a></td>
+        {% endfor %}
+
+
+        <a href="/board/write">글 등록하기</a>
+    </table>
+</body>
