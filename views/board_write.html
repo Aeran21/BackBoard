@@ -1,22 +1,28 @@
 <body>
-    <h1><a href="/">애라니네 BOARD</a></h1>
-    <h2>게시글 작성</h2>
+    <h2 style="padding: 20px;">❤️‍🔥방명록 작성❤️‍🔥</h2>
+    <button onclick="location.href='/board/list'" style="margin-left: 20px; ">📚방명록 구경</button>
+    <button onclick="location.href='/'" style="margin-left: 10px;">🏠 돌아가기</button><br>
+    <h2 style="margin-left: 20px; font-size: 20px;">게시글 작성</h2>
     <form method="post" action="/board/write">
-        <ul>
-            <li>
-                Title: <input type="text" name="title">
-            </li>
-            <li>
-                Name: <input type="text" name="username">
-            </li>
-            <li>
-                Date: <input type="text" name="date">
-            </li>
-            <li>
-                Content: <input type="text" name="content">
-            </li>
-        </ul>
-        <input type="submit" value="등록">
+        <table border="1" style="width: 500px; margin-left: 20px;">
+            <tr style="text-align: center;">
+                <td>방명록</td>&nbsp;&nbsp;
+                <td><input type="text" name="title" style="width: 300px;"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>이름</td>&nbsp;&nbsp;
+                <td><input type="text" name="username" style="width: 300px;"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>날짜</td>&nbsp;&nbsp;
+                <td><input type="text" name="date" style="width: 300px;"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>길게 쓰고 싶다면?!</td>&nbsp;&nbsp;
+                <td><input type="text" name="contents" style="width: 300px;"></td>
+            </tr>
+        </table><br>
+        <button type="submit" style="margin-left: 20px; ">📩전송</button>
     </form>
     
 </body>

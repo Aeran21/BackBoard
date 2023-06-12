@@ -1,23 +1,23 @@
 <body>
-    <h1><a href="/">애라니네 BOARD</a></h1>
-    <h2>게시글 목록</h2>
-    <table>
-        <tr>
-            <td>No</td>
-            <td>Title</td>
-            <td>Name</td>
-            <td>Date</td>
+    <h2 style="padding: 20px;">❤️‍🔥방명록 리스트❤️‍🔥</h2>
+    <button onclick="location.href='/board/write'" style="margin-left: 20px; ">✍🏻방명록 등록</button>
+    <button onclick="location.href='/'" style="margin-left: 10px;">🏠 돌아가기</button><br>
+    <table border="1" style="width: 500px; padding: 20px; margin-left: 20px;">
+        <tr style="text-align: center;">
+            <td>번호</td>&nbsp;&nbsp;
+            <td>방명록</td>&nbsp;&nbsp;&nbsp;
+            <td>이름</td>&nbsp;&nbsp;
+            <td>날짜</td>&nbsp;&nbsp;
+            <td></td>
         </tr>
         {% for item in content %}
-        <tr>
+        <tr style="text-align: center;">
             <td>{{item.num}}</td>
             <td>{{item.title}}</td>
             <td>{{item.username}}</td>
             <td>{{item.date}}</td>
-            &nbsp;&nbsp;<td><a href="/board/view">자세히 보기</a></td>
+            <td><a href="/board/view" style="padding: 20px;">자세히 보기</a></td>
         {% endfor %}
-
-
-        <a href="/board/write">글 등록하기</a>
+        </tr>
     </table>
 </body>

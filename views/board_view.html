@@ -1,8 +1,11 @@
 <body>
-    <h1><a href="/">애라니네 BOARD</a></h1>
-    <h2>게시판 확인</h2>
-    <ul> 
-        <h2>{{content[0].title}}</h2>
+    <h2 style="padding: 20px;">❤️‍🔥방명록 확인❤️‍🔥</h2>
+    <button onclick="location.href='/board/list'" style="margin-left: 20px; ">📚방명록 구경</button>
+    <button onclick="location.href='/'" style="margin-left: 10px;">🏠 돌아가기</button><br>
+    <table border="1">
+    <ul>
+        <h2>{{content[1].title}}</h2>
+        <p>{{content[1].contents}}</p>
     </ul>
-    <a href="/board/list">목록</a>
+    </table>
 </body>
